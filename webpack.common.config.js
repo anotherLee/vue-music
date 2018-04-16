@@ -12,7 +12,7 @@ const generateConfig = env => {
             ? { app: './src/index.js', vendor: ['vue', 'axios'] }
             : { app: './src/index.js' },
         output: {
-            publicPath: '/',
+            publicPath: 'https://liyue2.github.io/vue-music/dist',
             filename: env === 'production' ? '[name].[chunkhash].js' : '[name].[hash].js',
             path: path.resolve(__dirname, 'dist')
         },
